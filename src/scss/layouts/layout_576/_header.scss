@@ -1,0 +1,39 @@
+.header {
+        
+    
+
+    &__logo {
+        max-width: 150px;
+    }
+
+    &__navigation {
+        
+    }
+
+    &__navigation-list {
+        width: 45%;
+
+        
+    }
+
+    .bag {
+        width: 120px;
+        height: 60px;
+        
+        &__image-wrapper {
+            width: 40px;
+            height: 40px;
+
+            .icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &__text-wrapper {
+            font-size: 14px;
+            // 17
+        }
+    }
+}
+

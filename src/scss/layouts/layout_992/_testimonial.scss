@@ -1,0 +1,25 @@
+.testimonial {
+    
+
+    .testimonial-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    &__statistick {
+
+        .statistick-item {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+            max-width: 250px;
+            width: 100%;
+            min-height: 250px;
+            
+
+            
+        }
+    }
+}

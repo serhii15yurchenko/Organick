@@ -1,0 +1,40 @@
+.offer {
+
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+    &__subtitle {
+        
+        text-align: left;
+        
+    }
+
+    &__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+
+        h3 {
+            margin-bottom: 0px;
+        }
+
+        
+    }
+
+    &__list {
+        
+
+        .offer-item {
+            
+            padding: 30px 30px 20px;
+           
+            
+            &__type {
+                
+                top: 30px;
+                left: 30px;
+            }
+
+
+        }
+    }
+}

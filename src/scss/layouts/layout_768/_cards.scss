@@ -1,0 +1,22 @@
+.cards {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    
+
+    &__list {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .cards-item {
+            &:nth-of-type(3) {
+                grid-column: unset;
+                width: unset;
+                margin: unset;
+            }
+             position: relative;
+            
+           
+
+            
+        }
+    }
+}

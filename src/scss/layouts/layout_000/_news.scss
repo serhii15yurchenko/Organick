@@ -1,0 +1,181 @@
+.news {
+    padding-top: 65px;
+    // 130
+    padding-bottom: 55px;
+    // 110
+
+    .container {
+
+    }
+
+    &__subtitle {
+        font-family: $fontYellowtail;
+        font-size: 36px;
+        letter-spacing: 0.36px;
+        text-align: center;
+        color: $lightGreen;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        // 104
+
+        h3 {
+            font-size: 45px;
+            font-family: $fontRoboto;
+            font-weight: 700;
+            letter-spacing: 0.36px;
+            color: $darkGreen;
+            margin-bottom: 30px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        a {
+            &:hover {
+                background-color: $lightGreen;
+                border-color: transparent;
+                transition: all .2s ease;
+            }
+            padding: 25px 10px 25px 23px;
+            // display: block;
+            cursor: pointer;
+            background-color: $white;
+            border-radius: 16px;
+            border: 1px solid $darkGreen;
+            display: flex;
+            align-items: center;
+            transition: all .2s ease;
+            // max-width: 267px;
+
+            p {
+                font-family: $fontRoboto;
+                font-size: 19px;
+                letter-spacing: 0.36px;
+                margin-right: 24px;
+                color: $darkGreen;
+    
+            }
+    
+            .icon-wrapper {
+                width: 38px;
+                height: 34px;
+                border-radius: 50%;
+                background-color: $darkGreen;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .icon {
+                    width: 15px;
+                    height: 11px;
+                }
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .news-item {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            img {
+                max-width: 670px;
+                width: 100%;
+                border-radius: 30px;
+                min-height: 515px;
+                object-fit: cover;
+            }
+
+            &__info {
+                position: absolute;
+                bottom: 0;
+                padding: 15px 30px;
+                cursor: pointer;
+
+                // max-width: 510px;
+                background-color: $white;
+                border-radius: 30px;
+                border: 1px solid $lightGrey;
+
+                .info-person {
+                    margin-bottom: 10px;
+
+                    .icon {
+                        width: 18px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                    .person-name {
+                        font-family: $fontRoboto;
+                        font-size: 17px;
+                        letter-spacing: 0.36px;
+                        color: $darkGreen;
+                    }
+                }
+
+                .info-title {
+                    font-family: $fontRoboto;
+                    font-size: 25px;
+                    letter-spacing: 0.36px;
+                    font-weight: 700;
+                    color: $darkGreen;
+                    margin-bottom: 38px;
+                    line-height: 35px;
+                }
+
+                .info-text {
+                    font-family: $fontOpenSans;
+                    font-size: 18px;
+                    color: $grey;
+                    letter-spacing: 0.36px;
+                    line-height: 32px;
+                    margin-bottom: 17px;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        font-family: $fontRoboto;
+                        font-size: 20px;
+                        letter-spacing: 0.36px;
+                        color: $darkGreen;
+                        margin-right: 10px;
+                    }
+
+                    .icon-wrapper {
+                        width: 38px;
+                        height: 34px;
+                        border-radius: 50%;
+                        background-color: $darkGreen;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+            
+                        .icon {
+                            width: 15px;
+                            height: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

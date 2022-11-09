@@ -1,0 +1,40 @@
+.product {
+    
+
+    &__list {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .product-item {
+            
+            padding: 30px 30px 20px;
+            
+
+            &__type {
+                padding: 10px 20px;
+                font-size: 15px;
+                top: 30px;
+                left: 30px;
+            }
+
+            
+
+            &__title {
+                
+                flex-direction: row;
+                
+
+                h3 {
+                    margin-bottom: unset;
+                   
+                }
+
+                .add-cart {
+                    width: unset;
+                    
+                }
+            }
+
+            
+        }
+    }
+}

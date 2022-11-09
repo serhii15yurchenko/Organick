@@ -1,0 +1,16 @@
+.product {
+
+    &__list {
+        grid-template-columns: 1fr 1fr;
+
+        .product-item {
+            
+            &__type {
+                padding: 10px 10px;
+                font-size: 13px;
+                
+            }
+
+        }
+    }
+}

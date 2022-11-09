@@ -1,0 +1,134 @@
+.product {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    
+    &__subtitle {
+        font-family: $fontYellowtail;
+        font-size: 36px;
+        letter-spacing: 0.36px;
+        text-align: center;
+        color: $lightGreen;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-size: 45px;
+        font-family: $fontRoboto;
+        font-weight: 700;
+        letter-spacing: 0.36px;
+        text-align: center;
+        color: $darkGreen;
+        margin-bottom: 42px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 19px;
+
+        .product-item {
+            
+            background-color: $backround;
+            border-radius: 30px;
+            padding: 15px 15px 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all .2s ease;
+
+            &__type {
+                padding: 10px 20px;
+                background-color: $darkGreen;
+                border-radius: 8px;
+                color: $white;
+                font-family: $fontOpenSans;
+                font-weight: 700;
+                font-size: 15px;
+                letter-spacing: 0.36px;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                // 30
+            }
+
+            &__photo {
+                width: 100%;
+            }
+
+            &__title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #D4D4D4;
+                width: 100%;
+
+                h3 {
+                    font-family: $fontRoboto;
+                    font-size: 21px;
+                    color: $darkGreen;
+                    letter-spacing: 0.36px;
+                    margin-bottom: 5px;
+                }
+
+                .add-cart {
+                    &:hover {
+                        background-color: $lightGreen;
+                        transition: all .2s ease;
+                        color: $white;
+                    }
+                    padding: 10px;
+                    background-color: $yellow;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    color: $darkGreen;
+                    font-family: $fontOpenSans;
+                    font-weight: 700;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+
+            &__prices {
+                padding-top: 15px;
+                font-family: $fontOpenSans;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                .cost {
+                    display: flex;
+                    flex-direction: column;
+
+                    .old-price {
+                        font-size: 17px;
+                        letter-spacing: 0.36px;
+                        color: #B8B8B8;
+                        text-decoration: line-through;
+                        margin-right: 10px;
+                    }
+    
+                    .new-price {
+                        font-size: 18px;
+                        font-weight: 700;
+                        letter-spacing: 0.36px;
+                        color: $darkGreen;
+                    }
+                }
+
+                .stars {
+                    display: flex;
+
+                    .icon {
+                        width: 14px;
+                        height: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

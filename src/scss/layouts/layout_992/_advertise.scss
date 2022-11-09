@@ -1,0 +1,19 @@
+.advertise {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    // 140
+    .container {
+        flex-direction: row;
+    }
+
+    
+
+    &__card:nth-of-type(1) {
+        
+        margin-bottom: unset;
+        margin-right: 50px;
+        // 50
+        
+    }
+    
+}

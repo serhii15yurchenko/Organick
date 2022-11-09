@@ -1,0 +1,174 @@
+.testimonial {
+    background-image: url(../images/testimonial-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 150px;
+
+    
+
+    .tns-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: none;
+        }
+        .tns-nav-active {
+            background-color: $lightGreen;
+        }
+    }
+    
+
+    &__subtitle {
+        font-family: $fontYellowtail;
+        font-size: 36px;
+        letter-spacing: 0.36px;
+        text-align: center;
+        color: $lightGreen;
+        display: block;
+        margin-bottom: 15px;
+    }
+    &__title {
+        font-size: 45px;
+        font-family: $fontRoboto;
+        font-weight: 700;
+        letter-spacing: 0.36px;
+        text-align: center;
+        color: $darkGreen;
+        margin-bottom: 70px;
+    }
+
+    .tns-outer {
+        margin-bottom: 50px;
+        // 100
+    }
+
+    &__list {
+        position: relative;
+    }
+    
+
+    .testimonial-item {
+
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        .item-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__photo {
+            width: 115px;
+            height: 115px;
+            border-radius: 100px;
+            margin-bottom: 18px;
+        }
+
+        &__stars {
+            display: flex;
+            margin-bottom: 30px;
+            .icon {
+                width: 14px;
+                height: 13px;
+            }
+        }
+
+        &__text {
+            text-align: center;
+            font-family: $fontOpenSans;
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: 0.36px;
+            color: $grey;
+            margin-bottom: 23px;
+            max-width: 940px;
+        }
+
+        &__person {
+            font-family: $fontRoboto;
+            font-weight: 700;
+            font-size: 26px;
+            letter-spacing: 0.36px;
+            color: $darkGreen;
+            margin-bottom: 7px;
+        }
+
+        &__consumer {
+            font-family: $fontOpenSans;
+            font-size: 14px;
+            letter-spacing: 0.36px;
+            text-align: center;
+            color: $grey;
+        }
+    }
+
+    .testimonial-line {
+        width: 100%;
+        height: 2px;
+        background-color: #E0E0E0;
+    }
+
+    &__statistick {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+
+        .statistick-item {
+            // &:not(:last-child) {
+            //     margin-right: 25px;
+            // }
+            margin: 20px;
+            max-width: 200px;
+            // 250
+            width: 100%;
+            min-height: 200px;
+            // 250
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid #fff;
+            outline: 5px solid $lightGreen;
+            border-radius: 50%;
+            background-color: $white;
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+
+                .number {
+                    font-family: $fontRoboto;
+                    font-weight: 700;
+                    font-size: 42px;
+                    text-align: center;
+                    color: $darkGreen;
+                    letter-spacing: 0.36px;
+                }
+
+                .text {
+                    font-family: $fontOpenSans;
+                    font-weight: 700;
+                    letter-spacing: 0.36px;
+                    font-size: 18px;
+                    text-align: center;
+                    color: $darkGreen;
+                }
+            }
+        }
+    }
+}

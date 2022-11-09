@@ -1,0 +1,31 @@
+.header {
+
+    &__logo {
+        max-width: 200px;
+    }
+
+    &__navigation-list {
+        width: 35%;
+
+    }
+
+    .bag {
+        width: 159px;
+        height: 70px;
+        
+
+        &__image-wrapper {
+            width: 56px;
+            height: 56px;
+
+            .icon {
+                width: 26px;
+                height: 24px;
+            }
+        }
+
+        &__text-wrapper {
+            font-size: 17px;
+        }
+    }
+}

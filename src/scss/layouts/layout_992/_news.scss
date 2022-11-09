@@ -1,0 +1,32 @@
+.news {
+    padding-top: 130px;
+    padding-bottom: 110px;
+
+
+    &__list {
+        flex-direction: row;
+
+        .news-item {
+            &:not(:last-child) {
+                margin-right: 30px;
+                margin-bottom: 0px;
+            }
+            
+            
+            
+
+            &__info {
+                bottom: -72px;
+                padding: 50px 50px;
+
+                max-width: 610px;
+                border: 1px solid #9d9d9d4d;
+
+                
+
+                
+            }
+        }
+    }
+
+}
